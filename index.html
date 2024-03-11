@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+        <!-- fontawsome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <h2 class="text-light text-center">CALCULATOR</h2>
+        <div class="row p-4 ">
+            <div class="col-4"></div>
+                   
+            <div class="col-4 ">
+                    
+                <div class="row   mt-4">
+                    <div class="col-3"><input id="result" type="text" style="text-align: right;" placeholder="0" readonly>
+                    <label for=" "   ></label></div>
+                  </div>
+                <div class="row mt-2">
+                    <div class="col-3 "><button class="number" value="7" onclick="display('7')">7</button></div>
+                    <div class="col-3 " ><button class="number" value="8" onclick="display('8')">8</button></div>
+                    <div class="col-3 "><button class="number" value="9" onclick="display('9')">9</button></div>
+                    <div class="col-3 "> <button class="operator text-danger " onclick="ClearAll('AC')">AC</button></div>
+                </div>
+
+                <div class="row mt-2">
+                    <div class="col-3 mt-2"><button class="number" value="4" onclick="display('4')">4</button></div>
+                    <div class="col-3 mt-2"><button class="number" value="5" onclick="display('5')">5</button></div>
+                    <div class="col-3 mt-2"><button class="number" value="6" onclick="display('6')">6</button></div>
+                    <div class="col-3 mt-2"> <button class="operator" value="*" onclick="display('*')">*</button></div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-3 mt-2"><button class="number" onclick="display('1')">1</button></div>
+                    <div class="col-3 mt-2"><button class="number" onclick="display('2')">2</button></div>
+                    <div class="col-3 mt-2"><button class="number" onclick="display('3')">3</button></div>
+                    <div class="col-3 mt-2"> <button class="operator" onclick="display('-')">-</button></div>
+
+                </div>
+                <div class="row mt-2">
+                    <div class="col-3 mt-2"><button class="number" onclick="display('.')">.</button></div>
+                    <div class="col-3 mt-2"><button class="number" onclick="display('0')">0</button></div>
+                    <div class="col-3 mt-2"><button class="number" onclick="display('/')">/</button></div>
+                    <div class="col-3 mt-2"> <button class="operator" onclick="display('+')">+</button></div>
+
+                </div>
+                <div class="row mt-2 mb-4">
+                    <div class="col-3 mt-3 C " ><button class="number  text-danger" onclick="back()"><i class="fa-solid fa-delete-left"></i></button></div>
+                    <div class="col-3 mt-3 mb-2 C"><button class="number" id="d" value="=" onclick="equal()" >=</button></div>
+                  
+
+                </div>
+            </div>
+            <div class="col-4"></div>
+
+
+        </div>
+    </div>
+
+</body>
+<script src="cal.js"></script>
+
+</html>
